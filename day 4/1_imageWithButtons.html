@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+ <title>Q.1</title>
+ <head>
+ <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <style>
+  body{
+   max-width:700px;
+   padding: 40px;
+   margin:auto;
+  }
+  .box{
+   border: 2px solid blue;    
+   height: 500px;
+   width: 100%;
+   padding: 20px;
+  }
+.a{display:inline-block;
+}
+button{
+height:50px;
+width:100px;
+margin:20px;
+font-size:20px;
+margin-left:100px;
+}
+button:hover{
+cursor:pointer;}
+   
+
+ </style>
+
+ </head>
+ <body>
+  <div class="box">
+   <img src="https://i.pinimg.com/originals/5f/a4/b7/5fa4b7287975bbb34f0d61008cc1d586.jpg" width="350px" height="500px" id="image"></img>
+   <div class="a">
+<button onclick="one()">First</button><br>
+<button onclick="two()">Second</button><br>
+<button onclick="three()">Third</button> <br><br><br><br><br><br><br>
+</div>
+  </div>
+  <script >
+function one(){
+document.getElementById("image").src="https://i.pinimg.com/originals/5f/a4/b7/5fa4b7287975bbb34f0d61008cc1d586.jpg";
+}
+function two(){
+let x= document.getElementById("image");
+x.src="https://images-na.ssl-images-amazon.com/images/I/91QqAwn-DML._RI_.jpg";
+}
+function three(){
+document.getElementById("image").src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT0QEXTFNGZHw-O75-olTTwcrlUv_ewazRV2SzexPZ5QA&usqp=CAU&ec=45699843";}
+</script>
+ </body>
+</html>

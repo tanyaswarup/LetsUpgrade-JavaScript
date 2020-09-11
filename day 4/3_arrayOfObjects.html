@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html>
+ <title>Q.3 and 4</title>
+ <head>
+ <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ </head>
+ <body>
+ <script>
+
+// question 3
+console.log("question 3");
+const people= [{name:"tanya", age: 20, country:"england", hobbies: ["dance", "theater"] },
+{name:"priyanka", age: 21, country:"america", hobbie:["sing", "paint"] },
+{name:"aastha", age: 32, country:"india", hobbies:["gardening", "graffiti"] },
+{name:"sanya", age:43, country:"india", hobbies: ["skating", "football"] },
+ {print:function(){console.log(people)}
+}
+];
+people[4].print();
+
+//question 4
+console.log("question 4 (a)");
+function lessthan30(){
+for(let i=0;i<people.length;i++)
+{if(people[i].age<30){
+console.log(people[i])}
+else
+continue;
+}}
+
+lessthan30();
+console.log("question 4 (b)");
+function countryIndia(){
+for(let i=0;i<people.length;i++)
+{if(people[i].country== "india"){
+console.log(people[i])}
+else
+continue;
+}
+}
+countryIndia();
+
+</script>
+ </body>
+</html>
