@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud (session storage)</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td,th{
+            height:40px;
+            padding: 5px;
+            text-align: center;
+            border:3px solid rgb(63, 119, 6);
+        }
+        th{
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+        td{
+            font-size: 20px;
+        }
+        input{
+            padding: 10px;
+            text-align: center;
+            border: 2px solid black;
+            margin: 30px 120px;
+            font-size: 18px;
+        }
+        input:focus{
+            background-color: rgb(193, 219, 168);
+        }
+        button{
+            padding: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(193, 219, 168);
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" id="searchName" placeholder="Search By Name" onkeyup="searchByName()">
+    <input type="text" id="searchCity" placeholder="Search By City" onkeyup="searchByCity()" >
+    <table>
+        <thead>
+            <tr>
+                <th>S.no.</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Salary</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="data-row"> </tbody>
+    </table>
+    <script src="1_crud.js"></script>
+</body>
+</html>
